@@ -1,0 +1,32 @@
+<!--10. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task10</title>
+</head>
+<body>
+  <input type="numper" id="inp" placeholder="ENTER THE NUMPER">
+    <button onclick="diff()">RESULT</button>
+    <h1 id='output'></h1>
+</body>
+<script>
+diff = () => {
+  let a = document.getElementById('inp').value;
+
+    result = a-19;
+    if(result>=0){
+      result = 3*(Math.abs(result));
+    }else{
+        result = (Math.abs(result));
+    }
+    console.log(result);
+    document.getElementById('output').innerHTML = result;
+
+}
+</script>
+</html>

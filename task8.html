@@ -1,0 +1,39 @@
+<!--8. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.  
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="numper" id="inp" placeholder="ENTER THE NUMPER">
+    <button onclick="thirteen()">CHECK</button>
+    <h1 id='output'></h1>
+
+
+    <script>
+        function thirteen(){
+            let num = document.getElementById('inp').value;
+            let diff = num-13;
+
+            if(diff>=0){
+                    diff = diff*2; 
+                }else{
+                    diff = -(diff);
+                }
+                document.getElementById('output').innerHTML = diff;
+
+    
+}
+
+    </script>
+
+</body>
+</html>
+

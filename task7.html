@@ -1,0 +1,29 @@
+<!-- 7. Write a JavaScript exercise to get the extension of a filename.  
+--> 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp" placeholder="ENTER THE fileName">
+    <button onclick="extention()">CHECK</button>
+    <h1 id = 'screen'></h1>
+
+   <script>
+        function extention(){
+            let fileName = document.getElementById('inp').value;
+            console.log(fileName.split('.').pop());
+            document.getElementById('screen').innerHTML = fileName.split('.').pop();
+        }
+       
+    </script>
+
+</body>
+</html>
+ 

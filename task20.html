@@ -1,0 +1,33 @@
+<!--Write a JavaScript program to check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task20</title>
+</head>
+<body>
+<input type="text" id="inp" placeholder="enter string">
+<button onclick="check(document.getElementById('inp').value)">CHECK</button>
+<h1 id = 'screen'></h1>
+
+   <script>
+       check=(inpstr) =>{
+        if(inpstr.slice(4,10)=="Script"){
+            result = inpstr.slice(0,4) + inpstr.slice(10);
+            console.log(result);
+            document.getElementById('screen').innerHTML = result;
+        }else{
+            console.log(inpstr)
+            document.getElementById('screen').innerHTML = inpstr;
+
+        }
+       }
+ 
+   </script> 
+</body>
+</html>
+

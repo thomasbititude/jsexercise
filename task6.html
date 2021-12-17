@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task6</title>
+</head>
+<body>
+    <h3>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.</h3>
+    <input type="text" id="temperature1" placeholder="enter celsius temperature" >
+    <button type="button"  onclick="fun1()">Covert</button>
+    <p id = "display1" style="margin-top: 10px;" > </p>
+    <input type="text" id="temperature2" placeholder="enter fahrenheit temperature" >
+    <button type="button"  onclick="fun2()">Convert</button>
+    <p id = "display2" style="margin-top: 10px;" > </p>
+
+<script>
+    function fun1(){
+        let cel = document.getElementById("temperature1").value;
+        let result1 = (cel*9/5) +32;
+        document.getElementById("display1").innerHTML ="temperature in fahrenheit is "+result1;
+    }
+
+    function fun2(){
+        let fah=document.getElementById("temperature2").value;
+        let result2=(fah-32)*5/9;
+        document.getElementById("display2").innerHTML =("temperature in celsius is "+result2);
+    }
+    
+</script>
+</body>
+ </html>

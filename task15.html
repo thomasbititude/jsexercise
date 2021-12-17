@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task15</title>
+</head>
+<body>
+  <h3>15. Write a JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1.  
+</h3> 
+
+<input type="text" id="inp" placeholder="ENTER THE STRING">
+<button onclick="str()">CHECK</button>
+<h1 id = 'screen'></h1>
+
+<script>
+ str = () =>{
+    let inpstr = document.getElementById('inp').value;
+
+        if(inpstr.length <= 1){
+            document.getElementById('screen').innerHTML = inpstr;
+
+
+    }else{
+        let a = inpstr.slice(1,inpstr.length -1);
+    let result = inpstr[inpstr.length-1] + a + inpstr[0];
+    document.getElementById('screen').innerHTML = result;
+
+    }
+}
+</script>
+</body>
+</html>

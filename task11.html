@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task11</title>
+</head>
+<body>
+    <h3>11. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.   
+    </h3>
+    
+    <input type="numper" id="a" placeholder="ENTER FIRST NUMPER">
+    <input type="numper" id="b" placeholder="ENTER SECOND NUMPER">
+
+    <button onclick="fifty(document.getElementById('a').value,document.getElementById('b').value)">CHECK</button>
+    <h1 id='output'></h1>
+
+    <script>
+
+        fifty = (a,b) =>{
+            if(a==50 || b==50 || (Math.abs(a)+Math.abs(b)) ==50){
+            document.getElementById('output').innerHTML = "TRUE";
+
+            }else
+            {
+            document.getElementById('output').innerHTML = "FALSE";
+            }
+        }
+    </script>
+</body>
+</html>
