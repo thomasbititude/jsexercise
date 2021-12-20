@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task42</title>
+</head>
+<body>
+    <h3>42. Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array.    </h3>
+    <h4>CHECK THE CONSOLE</h4>
+
+    <script>
+        check = (arr) =>{
+            if(arr[0]>=arr[arr.length-1]){
+                for(i=0;i<arr.length;i++){
+                    arr[i] = arr[0];
+                }
+            }else{
+                    for(i=0;i<arr.length;i++){
+                    arr[i] = arr[arr.length-1];  
+                }
+            }
+            return(arr)
+        }
+               console.log(check([1,2,3]));
+                console.log(check([5,2,1]));
+                console.log(check([2,2,3,40]));
+                console.log(check([7,1,2,1,2,5]));
+    </script>
+</body>
+</html>

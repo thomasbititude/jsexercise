@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task30</title>
+</head>
+<body>
+        <h3>30. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  </h3>
+        
+        <input type="text" id="inp" placeholder="ENTER THE STRING">
+        <button onclick="check()">CHECK</button>
+        <h1 id = 'screen'></h1>
+
+    <script>
+check=() =>{
+           let inpstr = document.getElementById('inp').value;
+            str = inpstr.split("");
+           console.log(str);
+           for(i=0;i<str.length;i++){
+               if (str[i] == 'z'){
+                   str[i] = 'a';
+               }else if(str[i] == 'Z'){
+                   str[i] = 'A';
+               }else{
+str[i] = String.fromCharCode(str[i].charCodeAt(0)+1)
+               }
+               }
+               str  = str.join('');
+               document.getElementById('screen').innerHTML = str;
+
+           }
+
+    
+
+    </script>
+</body>
+</html>

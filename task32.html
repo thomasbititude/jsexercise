@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task32</title>
+</head>
+<body>
+    <h3>32. Write a JavaScript program to convert a given number to hours and minutes. </h3>
+    
+    <input type="numper" id="inp" placeholder="ENTER THE NUMPER">
+    <button onclick="check()">Convert</button>
+    <h1 id='output'></h1>
+
+   <script>
+        check = () =>{
+        let nump = document.getElementById('inp').value;
+        H = Math.floor(nump/60);
+        M = nump%60;
+    
+        document.getElementById('output').innerHTML = H+"hours"+ M+"minutes";
+
+        }
+</script>
+
+</body>
+</html>

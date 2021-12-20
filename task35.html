@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task35</title>
+</head>
+<body>
+    <h3>35. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.  </h3>
+    
+    <input type="numper" id="input1" style="margin-top: 20px;" placeholder="enter first number " ><br>
+    <input type="numper" id="input2"  style="margin-top: 20px;" placeholder="enter second number " ><br>
+    <button type="button" style="margin-top: 20px;"  onclick="format()">Result</button>
+    <p id ="display"  style="margin-top: 20px;"> </p>
+
+    <script>
+        format = () =>{
+            let num1 = document.getElementById('input1').value;
+            let num2 = document.getElementById('input2').value;
+            div = num1/num2;
+            result = div.toLocaleString();
+            document.getElementById('display').innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

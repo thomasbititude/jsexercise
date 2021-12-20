@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task37</title>
+</head>
+<body>
+    <h3>37. Write a JavaScript program to concatenate two strings except their first character.  </h3>
+
+    <input type="text" id="input1" style="margin-top: 20px;" placeholder="enter first string " ><br>
+    <input type="text" id="input2"  style="margin-top: 20px;" placeholder="enter second string " ><br>
+    <button type="button" style="margin-top: 20px;"  onclick="conctenate()">Result</button>
+    <h1 id ="display"  style="margin-top: 20px;"> </h1>
+
+    <script>
+        conctenate = () =>{
+            let str1 = document.getElementById('input1').value;
+            let str2 = document.getElementById('input2').value;
+            a = str1.slice(1);
+            b = str2.slice(1);
+            newstr = a.concat(b)
+            document.getElementById('display').innerHTML = newstr;
+
+        }
+    </script>
+    
+</body>
+</html>

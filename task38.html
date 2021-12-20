@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task38</title>
+</head>
+<body>
+    <h3>38. Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three.   </h3>
+    <input type="text" id="inp" placeholder="ENTER THE STRING">
+    <button onclick="check()">CHECK</button>
+    <h1 id = 'screen'></h1>
+
+
+<script>
+        check=() =>{
+           let str = document.getElementById('inp').value;
+           if(str.length>=3){
+               a = str.slice(0,str.length-3);
+               b = str.slice(str.length-3);
+               result = b.concat(a);
+               document.getElementById('screen').innerHTML = result;
+           }else{
+            document.getElementById('screen').innerHTML = "enter string with minimum 3 letters";
+   
+           }
+        }
+</script>
+</body>
+</html>
